@@ -100,6 +100,11 @@ public class Locators {
     static final By LOCATOR_SELECTION_RENTAL_PERIOD =
             By.xpath(".//div[text()='четверо суток']");
 
+    //для поля Комментарий для курьера
+    //поле ввода комментария
+    static final By LOCATOR_COMMIT_SELECTION =
+            By.xpath(".//input[@class='Input_Input__1iN_Z Input_Responsible__1jDKN']");
+
     //для проверки бага подтверждения заказа (страница подтверждения заказа)
     public static final By NOT_FOUND_AFTER_PLACING_ORDER_LOCATOR
             = By.xpath(".//div[@class='Order_ModalHeader__3FDaJ']");

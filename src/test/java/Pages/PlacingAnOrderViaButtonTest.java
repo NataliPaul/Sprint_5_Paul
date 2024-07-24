@@ -4,6 +4,7 @@ import model.MainPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -50,6 +51,9 @@ public class PlacingAnOrderViaButtonTest {
 
         mainPage.clickButton(Locators.LOCATOR_RENTAL_PERIOD);
         mainPage.clickButton(Locators.LOCATOR_SELECTION_RENTAL_PERIOD);
+        mainPage.clickButton(By.xpath(".//input[@id='grey']"));
+        mainPage.fillingOutFormFields(Locators.LOCATOR_COMMIT_SELECTION, Locators.LOCATOR_COMMIT_SELECTION,
+                "Это мой первый автотест на JAVA");
 
         mainPage.clickButton(Locators.ORDER_IN_FORM_BUTTON);
 
@@ -78,6 +82,9 @@ public class PlacingAnOrderViaButtonTest {
 
         mainPage.clickButton(Locators.LOCATOR_RENTAL_PERIOD);
         mainPage.clickButton(Locators.LOCATOR_SELECTION_RENTAL_PERIOD);
+        mainPage.clickButton(By.xpath(".//input[@id='black']"));
+        mainPage.fillingOutFormFields(Locators.LOCATOR_COMMIT_SELECTION, Locators.LOCATOR_COMMIT_SELECTION,
+                "Это мой первый автотест");
 
         mainPage.clickButton(Locators.ORDER_IN_FORM_BUTTON);
 
